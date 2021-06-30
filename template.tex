@@ -11,6 +11,7 @@
 \usepackage{multicol}
 \usepackage{wrapfig}
 \usepackage{stackengine}
+\usepackage{float}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{tikz}
@@ -139,7 +140,7 @@
 %-------------------------------- Formatação -----------------------------------
 \titleformat*{\section}{\color{OrangeEd}\fontsize{18pt}{18}\centering\bfseries\sffamily\uppercase}
 \titleformat*{\subsection}{\color{black}\raggedright\large\bfseries\sffamily\uppercase}
-\titleformat*{\subsubsection}{\color{black}\itshape\subsubsectionfont}
+\titleformat*{\subsubsection}{\color{black}\bfseries\uppercase}
 % \titlespacing{\subsection}{0mm}{0mm}{0mm}
 % \titlespacing{\section}{0mm}{0mm}{0mm}
 
@@ -156,8 +157,8 @@
 
     \renewcommand{\sectionclass}{Matemática}
 
-    \include{parte1}
+    %\include{parte1}
     \include{parte2}
-    \include{Parte3}
+    %\include{Parte3}
     
 \end{document}
