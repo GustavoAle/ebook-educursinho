@@ -65,6 +65,9 @@
         \caption{Raio $r$, diâmetro $d$ e circunferência $c$ de um círculo}
     \end{figure}
 
+    o diâmetro de um círculo é $d = 2r$, logo o raio é $r = \frac{d}{2}$ e a circunferência/perímetro do círculo é $2\pi r$.
+    Onde $\pi$ é a constante matemática \textit{pi}, cujo valor é aproximadamente $3.14159265...$
+
     % \begin{figure}[H]
     %     \centering
     %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
@@ -343,9 +346,99 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (2,4);
+                \coordinate (C) at (4,1);
+                \coordinate (D) at (2,2);
+                \draw (A)--(B) ;
+                \draw (B)--(C) ;
+                \draw (C)--(A) ;
+                \draw[dashed] (D)--(A) ;
+                \draw[dashed] (D)--(B) ;
+                \draw[dashed] (D)--(C) ;
+                \node[circle, fill, label={left:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label={right:$B$}, inner sep=2pt] at (B) {};
+                \node[circle, fill, label={right:$C$}, inner sep=2pt] at (C) {};
+                \node[circle, fill, label={left:$D$}, inner sep=2pt] at (D) {};
+            \end{tikzpicture}
+        %}
         \caption{Tetraedro, o objeto tridimenssional com menos faces}
     \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \resizebox{0.5\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (0,4);
+                \coordinate (C) at (4,4);
+                \coordinate (D) at (4,0);
+                \draw (A)--(B) ;
+                \draw (C)--(D) ;
+                \draw (2,4) -- node[above] {$r$}(C); 
+                \draw[dashed] (2,0)-- node[left] {$h$}(2,4) ;
+                \draw (2,4) ellipse (2 and 1);
+                \draw[dashed] (D) arc(0:180:2 and 1);
+                \draw (A) arc(180:360:2 and 1);
+            \end{tikzpicture}
+        }
+        \caption{Cilindro}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \resizebox{0.5\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (2,0);
+                \draw (-2,0) arc (180:360:2 and 1);
+                \draw[dashed] (2,0) arc (0:180:2 and 1);
+                
+                % \draw (0,2) arc (90:270:1 and 2);
+                % \draw[dashed] (0,-2) arc (-90:90:1 and 2);
+                \draw (0,0) circle (2 and 2);
+                \draw (A)-- node[above] {$r$} (B);
+            \end{tikzpicture}
+        }
+        \caption{Esfera}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{0.5\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (0,3);
+                \coordinate (C) at (3,3);
+                \coordinate (D) at (3,0);
+                \coordinate (E) at (1,1);
+                \coordinate (F) at (1,4);
+                \coordinate (G) at (4,4);
+                \coordinate (H) at (4,1);
+                \draw (A)--(B)--(C)--(D)--node[below]{$l$}(A);
+                \draw (F)--(G)--node[right]{$l$}(H);
+                \draw[dashed] (H)--(E)--(F);
+                \draw[dashed] (A)--(E);
+                \draw (B)--(F);
+                \draw (C)--(G);
+                \draw (D)--node[right]{$l$}(H);
+                % \draw (B)--(C);
+                % \draw (A)--(B);
+                % \draw (A)--(B);
+                
+            \end{tikzpicture}
+        %}
+        \caption{Cubo}
+    \end{figure}
+
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Tetraedro, o objeto tridimenssional com menos faces}
+    % \end{figure}
 
     
 
