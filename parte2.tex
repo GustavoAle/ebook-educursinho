@@ -12,57 +12,10 @@
     \subsection*{Definições gerais}
     Antes do estudo da geometria devemos ter ciência das definições de conceitos presentes nesse ramo da matemática,
     dentro destes conceitos se enquadram as medidas, os ângulos, as fíguras geométricas e suas componentes.
-
-    \subsection*{Fíguras geométricas e suas componentes}
-    A primeira componente das fíguras geométricas e a mais simples delas é o ponto, o mesmo deve ser imaginado como um
-    ponto infinitesimal, não possuindo comprimento, área ou perímetro. Quando um ponto é integrante de uma fígura
-    geométrica o mais comum é chamarmos ele de \textit{vértice}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
-        \caption{Vértice de um triângulo }
-    \end{figure}
-
-    A linha por sua vez é o elemento que liga dois pontos $P_1$ e $P_2$ em uma reta, assim como o ponto é idealmente
-    infinitesimal a linha idealmente não possui espessura. Quando uma linha é parte integrante de uma fígura geométrica
-    sua denominação é \textit{aresta}.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
-        \caption{Aresta de um quadrado}
-    \end{figure}
-
-
-    Quando se tem 3 ou mais pontos o resultado da conexão deles é tido como superfície, plano ou fígura geométrica
-    dependendo da área da matemática e do contexto de estudo, porém vale ter em mente que também existem superfícies
-    não bidimensionais. Uma excessão a isso são os círculos e as elipses que não possuem vértices. No contexto da
-    geometria a ser estudado nesse capítulo a conexão de 3 ou mais vértices geram exclusivamente fíguras geométricas.
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
-        \caption{Um quadrilátero com as arestas realçadas em vermelho}
-    \end{figure}
-
-    No contexto de fíguras geométricas tridimenssionais, ou chamados sólidos, os sólidos podem ser fígurados por 4 ou
-    mais pontos ou através manipulação de fíguras geométricas bidimensionais num espaço tridimenssional.
-
-    Grandezas notórias das componentes citadas:
-    \begin{itemize}
-        \setlength\itemsep{1.15pt}
-        \item Ponto, vértice: distância relativo a outro objeto.
-        \item Reta: comprimento, distância e ângulo relativos a outro objeto.
-        \item Superfície: área, perímetro.
-        \item Sólido: volume.
-    \end{itemize}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
-        \caption{Tetraedro, o objeto tridimenssional com menos faces}
-    \end{figure}
+    
+    \vfill\null
+    \columnbreak
+    \vfill\null
 
     \subsection*{Grandezas e unidades de medida}
     \subsubsection*{Distância e comprimento}
@@ -97,9 +50,26 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
-        \caption{Raio, diâmetro e circunferência de um círculo}
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (2,2);
+                \coordinate (B) at (4,2);
+                \coordinate (C) at (2,0);
+                \coordinate (D) at (2,4);
+                \draw (A)--node[below] {$r$}(B) ;
+                \draw (C)--node[left] {$d$}(D) ;
+                \draw (A) circle (2cm)
+                (0,3) node[left] {$c$};
+            \end{tikzpicture}
+        %}
+        \caption{Raio $r$, diâmetro $d$ e circunferência $c$ de um círculo}
     \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Raio, diâmetro e circunferência de um círculo}
+    % \end{figure}
 
     \subsubsection*{Área}
     Área é a medida que expressa a quantidade de espaço bidimenssional ocupado por uma fígura geométrica,
@@ -176,5 +146,207 @@
 
     % \subsection*{Simetrias de figuras planas}
     % \lipsum[1-2]    
+
+    \subsection*{Fíguras geométricas e suas componentes}
+
+    \subsubsection*{Ponto}
+    A primeira componente das fíguras geométricas e a mais simples delas é o ponto, o mesmo deve ser imaginado como um
+    ponto infinitesimal, não possuindo comprimento, área ou perímetro. Quando um ponto é integrante de uma fígura
+    geométrica o mais comum é chamarmos ele de \textit{vértice}
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (1,1);
+                \coordinate (B) at (5,3);
+                \coordinate (C) at (5,0);
+                \node[circle, fill, label={above:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label=, inner sep=2pt] at (B) {};
+                \node[circle, fill, label=, inner sep=2pt] at (C) {};
+                \draw (A)--(B);
+                \draw (B)--(C);
+                \draw (A)--(C);
+            \end{tikzpicture}
+        %}
+        \caption{Triângulo com o vértice $A$ em realce }
+        % \label{fig:vertice_tri}
+    \end{figure}
+
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Vértice de um triângulo }
+    % \end{figure}
+
+    A partir de dois pontos $A$ e $B$ podemos traçar uma reta $\overline{AB}$ entre eles e caso exista um terceiro ponto $C$ sob a mesma reta, 
+    então esses três pontos são \textbf{colineares}.    
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (5,2);
+                \coordinate (C) at ($(A)!0.5!(B)$);
+                \node[circle, fill, label={above:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label={above:$B$}, inner sep=2pt] at (B) {};
+                \node[circle, fill, label={above:$C$}, inner sep=2pt] at (C) {};
+                \draw (A)--(B);
+            \end{tikzpicture}
+        %}
+        \caption{Pontos colineares $A$,$B$ e $C$}
+        \label{fig:reta_ab}
+    \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Pontos colineares}
+    %     \label{fig:reta_abc}
+    % \end{figure}
+
+    \subsubsection*{Reta}
+    A reta é um conjunto de pelo menos dois pontos, no caso dois pontos quaisquer $A$ e $B$ podem gerar a reta $\overline{AB}$, como na fígura \ref{fig:reta_ab}. 
+    Assim como o ponto é idealmente infinitesimal a reta idealmente não possui espessura. Quando uma reta é parte 
+    integrante de uma fígura geométrica sua denominação é \textit{aresta}.
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (3,3);
+                \coordinate (C) at (4,1);
+                \node[circle, fill, label={above:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label={above:$B$}, inner sep=2pt] at (B) {};
+                \node[circle, fill, label={right:$C$}, inner sep=2pt] at (C) {};
+                \draw (A)--(B);
+                \draw (B)--(C);
+                \draw (A)--(C);
+            \end{tikzpicture}
+        %}
+        \caption{Retas $\overline{AB}$,$\overline{BC}$ e $\overline{AC}$ do triângulo $ABC$}
+        \label{fig:tri_abc}
+    \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Reta $\overline{AB}$ do triângulo $\overline{ABC}$}
+    %     \label{fig:reta_ab}
+    % \end{figure}
+
+    Uma reta $p$ é \textbf{perpendicular} a reta $q$ se o ângulo formado entre elas for de 90 graus.
+    
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (O) at (1,1.5);
+                \coordinate (A) at (0,2);
+                \coordinate (B) at (4,0);
+                \coordinate (C) at (0,0);
+                \coordinate (D) at (3,4.5);
+                \draw (A)--(B) node[above] {$p$}  ;
+                \draw (C)--(D) node[left] {$q$};
+                % \pic[angle radius=1cm,"$\alpha$"] {angle=a--b--c};
+                \pic ["$90^{\circ}$", draw, -, angle radius=1cm] {angle = B--O--D};
+                % \draw (B)--(C);
+                % \draw (A)--(C);
+            \end{tikzpicture}
+        %}
+        \caption{Retas perpendiculares $p$ e $q$}
+    \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Retas perpendiculares $p$ e $q$}
+    % \end{figure}
+
+    %\columnbreak
+    Duas retas $p$ e $q$ são consideradas \textbf{paralelas entre si}, se qualquer reta $r$ perpendicular a reta $p$ também for 
+    perpendicular a reta $q$. Outra forma de descrever retas paralelas é através do \textbf{Quinto Postulado de Euclides}
+    que diz: Supondo que duas retas $p$ e $q$ são cortadas por uma terceira reta $r$. Se a soma dos ângulos formados um 
+    mesmo lado da reta $r$ resultar em 180 graus, então $m$ e $n$ são retas paralelas entre si.
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (5,1);
+                \coordinate (C) at (0,2);
+                \coordinate (D) at (5,3);
+                \draw (A)--node[below] {$p$}(B) ;
+                \draw (C)--node[above] {$q$}(D) ;
+            \end{tikzpicture}
+        %}
+        \caption{Retas paralelas $p$ e $q$}
+    \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Retas paralelas $p$ e $q$}
+    % \end{figure}
+
+
+    \subsubsection*{Plano e superfície}
+    Quando se tem 3 ou mais pontos o resultado da conexão deles é tido como superfície, plano ou fígura geométrica
+    dependendo da área da matemática e do contexto de estudo, porém vale ter em mente que também existem superfícies
+    não bidimensionais. Uma excessão a isso são os círculos e as elipses que não possuem vértices. No contexto da
+    geometria a ser estudado nesse capítulo a conexão de 3 ou mais vértices geram exclusivamente fíguras geométricas.
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (4,1);
+                \coordinate (C) at (5,4);
+                \coordinate (D) at (2,3);
+                \draw (A)-- node[below] {$\overline{AB}$} (B) ;
+                \draw (B)--(C) ;
+                \draw (C)-- node[above] {$\overline{CD}$} (D) ;
+                \draw (D)--(A) ;
+                \node[circle, fill, label={left:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label={right:$B$}, inner sep=2pt] at (B) {};
+                \node[circle, fill, label={right:$C$}, inner sep=2pt] at (C) {};
+                \node[circle, fill, label={left:$D$}, inner sep=2pt] at (D) {};
+            \end{tikzpicture}
+        %}
+        \caption{Um quadrilátero $ABCD$ com as arestas $\overline{AB}$ e $\overline{CD}$ realçadas}
+    \end{figure}
+
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+    %     \caption{Um quadrilátero com as arestas realçadas em vermelho}
+    % \end{figure}
+
+    \subsubsection*{Sólidos}
+    No contexto de fíguras geométricas tridimenssionais, ou chamados sólidos, os sólidos podem ser formados por 4 ou
+    mais pontos ou através manipulação de fíguras geométricas bidimensionais num espaço tridimenssional.
+    Todos objetos físicos que conhecemos podem ser abstraídos como formas geométricas, independente da complexidade.
+
+    %\columnbreak
+    Grandezas notórias das componentes citadas:
+    \begin{itemize}
+        \setlength\itemsep{1.15pt}
+        \item Ponto, vértice: distância relativo a outro objeto.
+        \item Reta: comprimento, distância e ângulo relativos a outro objeto.
+        \item Superfície: área, perímetro.
+        \item Sólido: volume.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\columnwidth]{assets/image_placeholder.png}
+        \caption{Tetraedro, o objeto tridimenssional com menos faces}
+    \end{figure}
+
+    
 
 \end{multicols*}
