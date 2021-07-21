@@ -22,6 +22,19 @@
     Distância e comprimento medem o quão longe dois pontos estão entre si, e no caso de arestas essa medida é
     denotada como comprimento. A unidade de medida base utilizada para comprimento é o metro (símbolo ${m}$), além do
     metro existem seus múltiplos que são igualmente utilizados dependendo da distância/comprimento aferido.
+    
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (5,2);
+                \draw node[fill,circle,inner sep=2pt]{} node[above]{$A$} (A)--node[below] {$d$}(B) node[fill, circle, inner sep=2pt] {} node[above]{$B$};
+            \end{tikzpicture}
+        %}
+        \caption{$d$ representa a distância entre os pontos que formam a reta $\overline{AB}$}
+    \end{figure}
+
     \begin{table}[H]
         \resizebox{\columnwidth}{!}{%
             \begin{tabular}{l|l|l}
@@ -80,6 +93,26 @@
     para área é o metro quadrado (símbolo ${m^2}$). Seus múltiplos também acompanham o termo 'quadrado',
     e a equivalência é a mesma do metro, porém elevada ao quadrado. Ex.: $1m = 10^2cm$ e $1m^2 = (10^2cm)^2 = 10^4cm^2$,
     lembrar essa regra pode facilitar na hora da conversão de área.
+    
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (4,3);
+                \coordinate (C) at (4,0);
+                % \coordinate (D) at (0,3);
+                \node[circle, fill, label={left:$A$}, inner sep=2pt] at (A) {};
+                \node[circle, fill, label={right:$B$}, inner sep=2pt] at (B) {};
+                \node[circle, fill, label={right:$C$}, inner sep=2pt] at (C) {};
+                % \node[circle, fill, label={left:$D$}, inner sep=2pt] at (D) {};
+                % \draw[dashed] (A)--(D)--(B);
+                \draw[fill=gray!25] (A)--(B)--(C)--(A);
+            \end{tikzpicture}
+        %}
+        \caption{Área é o espaço bidimenssional ocupado pela região cinza.}
+        \label{fig:tri_abc}
+    \end{figure}
 
     \begin{table}[H]
         \resizebox{\columnwidth}{!}{%
@@ -109,6 +142,28 @@
     o metro cúbico e o litro, ambos são usados regularmente, na qual o litro é a unidade mais usada para volumes
     pequenos, enquanto o metro cúbico é usado para expressar volumes maiores.
 
+    \begin{figure}[H]
+        \centering
+        %\resizebox{0.5\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (0,3);
+                \coordinate (C) at (3,3);
+                \coordinate (D) at (3,0);
+                \coordinate (E) at (1,1);
+                \coordinate (F) at (1,4);
+                \coordinate (G) at (4,4);
+                \coordinate (H) at (4,1);
+                \draw[fill=gray!25] (A)--(B)--(F)--(G)--node[right]{$l$}(H)--node[right]{$l$}(D)--node[below]{$l$}(A);
+                \draw (B)--(C)--(D);
+                \draw (C)--(G);
+                \draw[dashed] (A)--(E)--(H);
+                \draw[dashed] (E)--(F);
+            \end{tikzpicture}
+        %}
+        \caption{Cubo, cujo volume se dá por $l^3$, onde $l$ é o comprimento das arestas}
+    \end{figure}
+
     \begin{table}[H]
         \resizebox{\columnwidth}{!}{%
             \begin{tabular}{l|l|l}
@@ -130,25 +185,34 @@
     Ângulo é uma medida de inclinação entre duas retas ou dois planos, desde que eles não sejam paralelos entre si, no 
     contexto da geometria os ângulos estão presentes em todos os vértices das fíguras geométricas. 
     As unidades de medida mais comuns para ângulo são graus (símbolo $^{\circ}$), radianos (símbolo $rad$) e gradianos (símbolo $gon$).
+    
     Quanto no escopo das funções trigonométricas a unidade de medida mais utilizada é o radiano, por outro lado, 
     em aplicações de engenharia e na geometria a unidade mais usada é o grau. Considerando um grau $\alpha$ em graus, 
     sua conversão para radianos se dá por $rad(\alpha) = \alpha\cdot\pi/180$ 
 
-    % teste matemática em duas colunas
-    % \color{black}
-    % \begin{align}
-    %     f(x) &= \frac{sen(x)}{cos(x)} \\[10pt]
-    %     f(x) &= tan(x)
-    % \end{align}
-    % \color{mediumgray}
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+            \begin{tikzpicture}
+                \coordinate (O) at (1,2);
+                \coordinate (A) at (0.5,1);
+                \coordinate (B) at (2.5,5);
+                \coordinate (C) at (0,2);
+                \coordinate (D) at (5,2);
+                \draw (A)--(B) node[above] {$p$}  ;
+                \draw (C)--(D) node[above] {$q$};
+                % \pic[angle radius=1cm,"$\alpha$"] {angle=a--b--c};
+                \pic ["$65^{\circ}$", draw, -, angle radius=1.5cm] {angle = D--O--B};
+                % \draw (B)--(C);
+                % \draw (A)--(C);
+            \end{tikzpicture}
+        %}
+        \caption{Ângulo entre as retas $p$ e $q$}
+    \end{figure}
 
-    %\pagebreak
-    % \newpage
-    % \section*{Ângulos}
-    % \lipsum[1]
-
-    % \subsection*{Simetrias de figuras planas}
-    % \lipsum[1-2]    
+    O ângulo apresenta uma importância muito grande no desenvolvimento da geometria e dos problemas geométricos, sendo o 
+    ângulo uma grandeza imprescindível no desenrolar da matemática entorno das fíguras geométricas, principalmente os 
+    triângulos.  
 
     \subsection*{Fíguras geométricas e suas componentes}
 
@@ -166,9 +230,7 @@
                 \node[circle, fill, label={above:$A$}, inner sep=2pt] at (A) {};
                 \node[circle, fill, label=, inner sep=2pt] at (B) {};
                 \node[circle, fill, label=, inner sep=2pt] at (C) {};
-                \draw (A)--(B);
-                \draw (B)--(C);
-                \draw (A)--(C);
+                \draw (A)--(B)--(C)--(A);
             \end{tikzpicture}
         %}
         \caption{Triângulo com o vértice $A$ em realce }
@@ -224,9 +286,7 @@
                 \node[circle, fill, label={above:$A$}, inner sep=2pt] at (A) {};
                 \node[circle, fill, label={above:$B$}, inner sep=2pt] at (B) {};
                 \node[circle, fill, label={right:$C$}, inner sep=2pt] at (C) {};
-                \draw (A)--(B);
-                \draw (B)--(C);
-                \draw (A)--(C);
+                \draw (A)--(B)--(C)--(A);
             \end{tikzpicture}
         %}
         \caption{Retas $\overline{AB}$,$\overline{BC}$ e $\overline{AC}$ do triângulo $ABC$}
@@ -367,71 +427,67 @@
         \caption{Tetraedro, o objeto tridimenssional com menos faces}
     \end{figure}
 
-    \begin{figure}[H]
-        \centering
-        \resizebox{0.5\columnwidth}{!}{%
-            \begin{tikzpicture}
-                \coordinate (A) at (0,0);
-                \coordinate (B) at (0,4);
-                \coordinate (C) at (4,4);
-                \coordinate (D) at (4,0);
-                \draw (A)--(B) ;
-                \draw (C)--(D) ;
-                \draw (2,4) -- node[above] {$r$}(C); 
-                \draw[dashed] (2,0)-- node[left] {$h$}(2,4) ;
-                \draw (2,4) ellipse (2 and 1);
-                \draw[dashed] (D) arc(0:180:2 and 1);
-                \draw (A) arc(180:360:2 and 1);
-            \end{tikzpicture}
-        }
-        \caption{Cilindro}
-    \end{figure}
+    % \newpage
+    % \subsection*{Apenas para referência}
+    % \begin{figure}[H]
+    %     \centering
+    %     \resizebox{0.5\columnwidth}{!}{%
+    %         \begin{tikzpicture}
+    %             \coordinate (A) at (0,0);
+    %             \coordinate (B) at (0,4);
+    %             \coordinate (C) at (4,4);
+    %             \coordinate (D) at (4,0);
+    %             \draw (A)--(B) ;
+    %             \draw (C)--(D) ;
+    %             \draw (2,4) -- node[above] {$r$}(C); 
+    %             \draw[dashed] (2,0)-- node[left] {$h$}(2,4) ;
+    %             \draw (2,4) ellipse (2 and 1);
+    %             \draw[dashed] (D) arc(0:180:2 and 1);
+    %             \draw (A) arc(180:360:2 and 1);
+    %         \end{tikzpicture}
+    %     }
+    %     \caption{Cilindro}
+    % \end{figure}
 
-    \begin{figure}[H]
-        \centering
-        \resizebox{0.5\columnwidth}{!}{%
-            \begin{tikzpicture}
-                \coordinate (A) at (0,0);
-                \coordinate (B) at (2,0);
-                \draw (-2,0) arc (180:360:2 and 1);
-                \draw[dashed] (2,0) arc (0:180:2 and 1);
+    % \begin{figure}[H]
+    %     \centering
+    %     \resizebox{0.5\columnwidth}{!}{%
+    %         \begin{tikzpicture}
+    %             \coordinate (A) at (0,0);
+    %             \coordinate (B) at (2,0);
+    %             \draw (-2,0) arc (180:360:2 and 1);
+    %             \draw[dashed] (2,0) arc (0:180:2 and 1);
                 
-                % \draw (0,2) arc (90:270:1 and 2);
-                % \draw[dashed] (0,-2) arc (-90:90:1 and 2);
-                \draw (0,0) circle (2 and 2);
-                \draw (A)-- node[above] {$r$} (B);
-            \end{tikzpicture}
-        }
-        \caption{Esfera}
-    \end{figure}
+    %             % \draw (0,2) arc (90:270:1 and 2);
+    %             % \draw[dashed] (0,-2) arc (-90:90:1 and 2);
+    %             \draw (0,0) circle (2 and 2);
+    %             \draw (A)-- node[above] {$r$} (B);
+    %         \end{tikzpicture}
+    %     }
+    %     \caption{Esfera}
+    % \end{figure}
 
-    \begin{figure}[H]
-        \centering
-        %\resizebox{0.5\columnwidth}{!}{%
-            \begin{tikzpicture}
-                \coordinate (A) at (0,0);
-                \coordinate (B) at (0,3);
-                \coordinate (C) at (3,3);
-                \coordinate (D) at (3,0);
-                \coordinate (E) at (1,1);
-                \coordinate (F) at (1,4);
-                \coordinate (G) at (4,4);
-                \coordinate (H) at (4,1);
-                \draw (A)--(B)--(C)--(D)--node[below]{$l$}(A);
-                \draw (F)--(G)--node[right]{$l$}(H);
-                \draw[dashed] (H)--(E)--(F);
-                \draw[dashed] (A)--(E);
-                \draw (B)--(F);
-                \draw (C)--(G);
-                \draw (D)--node[right]{$l$}(H);
-                % \draw (B)--(C);
-                % \draw (A)--(B);
-                % \draw (A)--(B);
-                
-            \end{tikzpicture}
-        %}
-        \caption{Cubo}
-    \end{figure}
+    % \begin{figure}[H]
+    %     \centering
+    %     %\resizebox{0.5\columnwidth}{!}{%
+    %         \begin{tikzpicture}
+    %             \coordinate (A) at (0,0);
+    %             \coordinate (B) at (0,3);
+    %             \coordinate (C) at (3,3);
+    %             \coordinate (D) at (3,0);
+    %             \coordinate (E) at (1,1);
+    %             \coordinate (F) at (1,4);
+    %             \coordinate (G) at (4,4);
+    %             \coordinate (H) at (4,1);
+    %             \draw (A)--(B)--(F)--(G)--node[right]{$l$}(H)--node[right]{$l$}(D)--node[below]{$l$}(A);
+    %             \draw (B)--(C)--(D);
+    %             \draw (C)--(G);
+    %             \draw[dashed] (A)--(E)--(H);
+    %             \draw[dashed] (E)--(F);
+    %         \end{tikzpicture}
+    %     %}
+    %     \caption{Cubo}
+    % \end{figure}
 
 
     % \begin{figure}[H]
