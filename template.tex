@@ -2,6 +2,7 @@
 \usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
 % \usepackage{fontspec}
+\usepackage{adjustbox}
 \usepackage{graphicx}
 \usepackage{gensymb}
 \usepackage{fancyhdr}
@@ -17,8 +18,12 @@
 \usepackage{titlesec}
 \usepackage[table]{xcolor}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tkz-euclide}
 \usetikzlibrary{calc,babel,quotes,angles}
 \usepackage{amsmath}
+\usepackage{cancel}
 \usepackage{lipsum}
 \usepackage{array}
 
@@ -45,6 +50,7 @@
 \AtBeginDocument{\globalcolor{mediumgray}}
 
 %------------------------------- Formatação ------------------------------------
+
 \let\CLASSsection\section
 
 \RenewDocumentCommand{\section}{som}{%
@@ -150,9 +156,19 @@
 \titlespacing{\section}{0mm}{0mm}{8.5mm}
 
 \setlength{\columnsep}{12.5mm}
-\setlength{\parindent}{12.5mm} 
+% \setlength{\parindent}{12.5mm}
+\setlength{\parindent}{0mm}
 %\setlength{\parskip}{1mm}
 \renewcommand{\baselinestretch}{1.15}
+
+
+%------------------------------ Estilo pgfplot ---------------------------------
+
+\def\axisdefaultwidth{0.8\columnwidth}
+\pgfplotsset{every axis/.style={scale only axis,unit vector ratio=1 1 1}}
+
+\let\svtikzpicture\tikzpicture
+\def\tikzpicture{\noindent\svtikzpicture}
 
 %------------------------------ Inicio documento -------------------------------    
 \begin{document}
