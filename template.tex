@@ -21,7 +21,7 @@
 \usepackage{pgfplots}
 \usepackage[shortlabels]{enumitem}
 \usepackage{tkz-euclide}
-\usetikzlibrary{calc,babel,quotes,angles}
+\usetikzlibrary{calc,babel,quotes,angles,fit}
 \usepackage{amsmath}
 \usepackage{cancel}
 \usepackage{lipsum}
@@ -179,13 +179,17 @@
 \let\svtikzpicture\tikzpicture
 \def\tikzpicture{\noindent\svtikzpicture}
 
+\newcommand\addvmargin[1]{
+  \node[fit=(current bounding box),inner ysep=#1,inner xsep=0]{};
+}
+
 %------------------------------ Inicio documento -------------------------------    
 \begin{document}
     
     \renewcommand{\sectionclass}{Matemática}
 
     %\include{parte1}
-    % \include{parte2}
-    \include{Parte3}
+    \include{parte2}
+    % \include{Parte3}
     
 \end{document}

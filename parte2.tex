@@ -427,9 +427,115 @@
         \caption{Tetraedro, o objeto tridimenssional com menos faces}
     \end{figure}
 
-    \vfill\null
-    \pagebreak
-    \vfill\null
+
+
+\end{multicols*}
+
+\section*{Área e volume}
+% \subsection*{Fíguras planas}
+\begin{table}[H]
+    \setlength{\tabcolsep}{5mm} % separator between columns
+    \def\arraystretch{2} % vertical stretch factor
+    \newcommand{\tikzsize}{0.25\columnwidth/10cm}
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{c|c|c|c}
+            \rowcolor{gray!25}
+            \multicolumn{2}{c|}{\textbf{Figura}}     & \textbf{Área} & \textbf{Perímetro}         \\ \hline
+            Triângulo retângulo &    
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                    \coordinate (A) at (0,0);
+                    \coordinate (B) at (0,4);
+                    \coordinate (C) at (3,0);
+                    \coordinate (D) at (0,2);
+                    \draw (A)-- node[left]{$a$} (B)--(C)-- node[below]{$b$}(A);
+                    \addvmargin{2mm};
+                \end{tikzpicture}  
+            & $\displaystyle \frac{a\cdot b}{2}$ &  $a+b+\sqrt{a^2+b^2}$   \\ \hline
+            Triângulo equilátero & 
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (-3,0);
+                \coordinate (B) at (0,4);
+                \coordinate (C) at (3,0);
+                \coordinate (D) at (0,0);
+                \draw (A)-- node[left]{$a$} (B)--node[right]{$a$}(C)-- node[below]{$a$}(A);
+                \draw[dashed] (D) -- node[right] {$h$} (B);
+                \addvmargin{2mm};
+            \end{tikzpicture}  
+            & $\displaystyle \frac{a\cdot h}{2}$ ou $\displaystyle \frac{h^2}{\sqrt{3}}$ ou $\displaystyle \frac{\sqrt{3}}{4}a^2$  &  $3a$    \\ \hline
+            Triângulo isosceles &
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (-2,0);
+                \coordinate (B) at (0,4);
+                \coordinate (C) at (2,0);
+                \coordinate (D) at (0,0);
+                \draw (A)-- node[left]{$a$} (B)--node[right]{$a$}(C)-- node[below]{$b$}(A);
+                \draw[dashed] (D) -- node[right] {$h$} (B);
+                \addvmargin{2mm};
+            \end{tikzpicture}  
+            & $\displaystyle \frac{b\cdot h}{2}$  & $2a+b$       \\ \hline
+            Retângulo  & 
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (0,3);
+                \coordinate (C) at (4,3);
+                \coordinate (D) at (4,0);
+                \draw (A)-- node[left]{$a$} (B) -- (C) -- (D) -- node[below] {$b$} (A);
+                \addvmargin{2mm};
+            \end{tikzpicture} 
+            & $a\cdot b$  & $2(a+b)$      \\ \hline
+            Paralelogramo & 
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (1,3);
+                \coordinate (C) at (5,3);
+                \coordinate (D) at (4,0);
+                \coordinate (H) at (1,0);
+                \draw (A)-- node[left]{$a$} (B) -- (C) -- (D) -- node[below] {$b$} (A);
+                \draw[dashed] (H) -- node[right]{$h$} (B);
+                \addvmargin{2mm};
+            \end{tikzpicture} & $\displaystyle b\cdot h$  & $2(a+b)$         \\ \hline
+            Trapézio &
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (1,3);
+                \coordinate (C) at (4,3);
+                \coordinate (D) at (5,0);
+                \coordinate (H) at (1,0);
+                \draw (A)-- (B) -- node[above] {$b$} (C) -- (D) -- node[below] {$B$} (A);
+                \draw[dashed] (H) -- node[right]{$h$} (B);
+                \addvmargin{2mm};
+            \end{tikzpicture} & $\displaystyle \frac{(b+B)\cdot h}{2}$  &  
+            $b+B+2\sqrt{h^2+\left( \frac{B-b}{2} \right)^2}$      \\ \hline
+            Círculo &
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \coordinate (A) at (2,2);
+                \coordinate (B) at (4,2);
+                \draw[dashed] (A)--node[below] {$r$}(B) ;
+                \draw (A) circle (2cm);
+                \addvmargin{2mm};
+            \end{tikzpicture} & $\pi\cdot r^2$ & $2\pi\cdot r$ \\ \hline 
+            Elipse &
+            \begin{tikzpicture}[baseline=(current bounding box.center),scale=\tikzsize]
+                \draw[dashed] (2,4) -- node[above] {$a$}(5,4);
+                \draw[dashed] (2,4) -- node[left] {$b$} (2,6);
+                \draw (2,4) ellipse (3 and 2);
+                \addvmargin{2mm};
+            \end{tikzpicture} & $a\cdot b \cdot \pi$ & 
+            \footnotemark
+             \\ 
+        \end{tabular}%
+    }
+    \caption{Área de fíguras planas comuns}
+\end{table}
+
+\vfill
+\footnotetext{Não existe fórmula para descrever o perímetro de uma elipse.}
+
+
+\pagebreak
+
+\begin{multicols*}{2}
 
     \section*{Funções trigonométricas}
     As funções trigonométricas são funções que relacionam diversas propriedades
@@ -646,7 +752,7 @@
     Devido a complexidade em se cálcular o resultado das funções trigonométricas
     seno, cosseno e tangente, muitos exercícios que envolvem essas funções acabam
     por usar valores bem conhecidos, ou valores tabelados, isso é verdade
-    inclusive para os vestibulares.
+    principalmente para os vestibulares.
 
     \begin{table}[H]
         % \setlength\extrarowheight{1cm}
@@ -747,7 +853,7 @@
         \overline{AE} &= 6\sqrt{5}
     \end{align}
 
-    \noindent Portando a resposta correta é d) $6\sqrt{5}cm$.\\
+    \noindent Portando a resposta correta é \textbf{d)} $\mathbf{6\sqrt{5}cm}$.\\
 
 
     \noindent 
@@ -816,9 +922,49 @@
     \end{align}
     \noindent Como o exercício pede a área total das dez placas, é só 
     multiplicarmos a área de uma placa por dez e temos $22280cm^2$, portanto a 
-    alternativa correta é b) 22.280\\
+    alternativa correta é \textbf{b) 22.280}\\
 
-    \execnum (ENEM 2017) 
+    \execnum (ENEM 2017) Um caminhão de grande porte entalou embaixo do viaduto no 
+    cruzamento das avenidas Borges de Medeiros e Loureiro da silva no sentido 
+    Centro-Bairro, próximo á Ponte de Pedra, na capital. Esse veículo vinha de 
+    São Paulo para Porto Alegre e transportava três grandes tubos, conforme
+     ilustrado na foto.  
+
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\columnwidth]{assets/enem2017-157.png}
+        % \caption{Disponível em: www.caminhoes-e-carretas.com. Acesso em: 21 maio 2012 (adaptado).}
+    \end{figure}
+
+    Considere que o raio externo de cada cano da imagem seja $0,60m$ e que eles 
+    estejam em cima de uma carroceria cuja parte superior está a $1,30m$ do solo.
+    O desenho representa a vista traseira do empilhamento dos canos.
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\columnwidth]{assets/enem2017-157-2.png}
+    \end{figure}
+
+    A margem de segurança recomendada para que um veículo passe sob um viaduto é que
+    a altura total do veículo com a carga seja, no mínimo, $0,50m$ menor do que a altura
+    do vão do viaduto.
+    Considere $1,7$ como aproximação para $\sqrt{3}$.
+    Qual deveria ser a altura mínima do viaduro, em metro, para que esse caminhão 
+    pudesse passar com segurança sob seu vão?
+    \begin{enumerate}[a)]
+        \item 2,82
+        \item 3,52
+        \item 3,70
+        \item 4,02
+        \item 4,20
+    \end{enumerate}
+
+    \textbf{Solução:} Em resumo o problema pede a altura da pilha de tubos, 
+    acrescido da altura da carroceria do caminhão ($1,30m$) e a margem de segurança ($0,50m$).
+    Considerando que a altura da pilha de tubos seja $x$, portanto a resposta é 
+    $x+1,80m$. Basta portanto encontrarmos a altura da pilha de tubos, e analisando 
+    o problema temos o seguinte: 
+    
     \begin{figure}[H]
         \centering
         % \adjustbox{width=0.8\columnwidth}{
@@ -829,9 +975,12 @@
                 \draw (A) circle (2 and 2);
                 \draw (B) circle (2 and 2);
                 \draw (4,0) circle (2 and 2);
-                \draw[<->] (-2.5,-2) -- node[left] {$x$} (-2.5,5.4);
-                \draw[dashed] (A)-- node[below left] {$1,2cm$}(B);
-                \draw[dashed] (B)-- node[above right] {$h$} (C)--(A);
+                \draw[<->] (-2.3,-2) -- node[left] {$x$} (-2.3,5.4);
+                \draw[<->] (-3,-2) -- node[left] {$r$}  (-3,0);
+                \draw[<->] (-3,0) -- node[left] {$h$}   (-3,3.5);
+                \draw[<->] (-3,3.5) -- node[left] {$r$} (-3,5.4);
+                \draw[dashed] (A)-- node[below left] {$1,2m$}(B);
+                \draw[dashed] (B)-- node[above right] {$h$} (C)-- node[below] {$0,6m$}(A);
                 \pic ["$60^{\circ}$", draw, -, angle eccentricity=2] {angle = C--A--B};
                 % \tkzMarkRightAngle[size=.3](A,C,B);
             \end{tikzpicture}
@@ -839,6 +988,127 @@
         % \caption{Cilindro}
     \end{figure}
 
+    Perceba que entre o centro das circunferências podemos formar um triângulo 
+    equilátero que pode ser então dividido em dois triângulos retângulos de arestas 
+    $1,20m$, $0,60m$ e $h$. A altura total $x$ é composta por $h + 2r$, onde 
+    o $r$ se refere ao raio do círculo $0,60m$, e a resposta final 
+    pode ser reescrita como $h+3m$. Para encontrar o $h$ devemos 
+    lembrar da relação entre as funções trigonométricas e os triângulos retângulos
+    e como $h$ é o cateto oposto ao ângulo $60^\circ$ temos que:
+    \begin{align}
+        sen(60^\circ) &= \frac{h}{1,20m}
+    \end{align}
+    Consultando a tabela \ref{tab:trig_val}, temos que $sen(60^\circ) = \sqrt{3}/2$
+    , portanto:  
+    
+    \begin{align}
+        \frac{\sqrt{3}}{2} &= \frac{h}{1,20m}\\
+        h &= 1,2\cdot\frac{\sqrt{3}}{2}\\
+        h &= 1,02
+    \end{align}
+    
+    Logo, a resposta final dada por $h+3m$ resulta em $4,02m$. Portanto a resposta
+    correta é \textbf{d) 4,02}. É possível calcular o valor de $h$ usando o 
+    teorema de Pitágoras, porém caimos numa raiz quadrada que é díficil de calcular.\\
+    
+    \execnum (UNICAMP 2016) Um cilindro circular reto, cuja altura é igual ao diâmetro da 
+    base, está inscrito numa esfera. A razão entre os volumes 
+    da esfera e do cilindro é igual a:
+    \begin{enumerate}[a)]
+        \item $4\sqrt{2}/3$
+        \item $4/3$
+        \item $3\sqrt{2}/4$
+        \item $\sqrt{2}$
+    \end{enumerate}
+
+    \textbf{Solução:} O problema não especifica o raio da esfera nem da base do cilindro, porém 
+    ele nos informa que o cilindro está inscrito na esfera e que a altura do cilindro é 
+    a mesma do diâmetro da base, portanto analisando o problema chegamos na seguinte representação gráfica:
+
+    \begin{figure}[H]
+        \centering
+        \resizebox{0.5\columnwidth}{!}{%
+            \begin{tikzpicture}[scale=\columnwidth/10cm]
+                \coordinate (A) at (-2.8,-2.8);
+                \coordinate (B) at (-2.8,2.8);
+                \coordinate (C) at (2.8,2.8);
+                \coordinate (D) at (2.8,-2.8);
+                %circulo
+                \draw (-4.26,0) arc (180:360:4.26 and 1);
+                \draw[dashed] (4.26,0) arc (0:180:4.26 and 1);
+                \draw[dashed] (D) arc(0:180:2.8 and 1);
+                \draw (0,0) circle (4.26 and 4.26);
+                %cilindro
+                \draw (A)--(B) ;
+                \draw (C)--(D) ;
+                \draw (0,2.8) -- node[above] {$d/2$}(C); 
+                \draw[dashed] (0,-2.8)-- node[left] {$d$}(0,2.8) ;
+                \coordinate (A1) at (0,0);
+                \coordinate (B1) at (2,0);
+                \draw (0,2.8) ellipse (2.8 and 1);
+                \draw (A) arc(180:360:2.8 and 1); 
+                \draw[dashed] (0,0) -- node[left]{$r$}(C);
+                % \draw (0,2) arc (90:270:1 and 2);
+                % \draw[dashed] (0,-2) arc (-90:90:1 and 2);
+                % \draw (A1)-- node[above] {$r$} (B1);
+            \end{tikzpicture}
+        }
+        \caption{Cilindro}
+    \end{figure}
+
+    O volume do cilindro é facilmente calculável dado um diâmetro $d$ arbitrário, 
+    porém não possuímos o raio da esfera, na qual devemos obter com os parâmetros 
+    que já temos. Note que se traçarmos uma reta do centro do cilindro até a circunferência da base do 
+    cilindro temos então uma reta cujo comprimento coincide com o raio da esfera, 
+    além disso formamos um triângulo isosceles e retângulo com arestas $d/2$, $d/2$ e $r$.
+    
+
+    \begin{figure}[H]
+        \centering
+        % \adjustbox{width=0.8\columnwidth}{
+            \begin{tikzpicture}[scale=\columnwidth/10cm]
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (0,4);
+                \coordinate (C) at (4,4);
+                \draw (A)-- node[left] {$d/2$}(B);
+                \draw (B)-- node[above] {$d/2$}(C);
+                \draw (C)--node[below right] {$r$}(A);
+                \tkzMarkRightAngle[size=.3](A,B,C);
+            \end{tikzpicture}
+        % }
+        % \caption{Cilindro}
+    \end{figure}
+
+    Logo, utilizando o teorema de Pitágoras obtemos que o raio é:
+    \begin{align}
+        r^2 &= \left(\frac{d}{2}\right)^2+\left(\frac{d}{2}\right)^2\\[1ex]
+        r^2 &= \frac{d^2}{2}\\[1ex]
+        r &= \frac{d}{\sqrt{2}}
+    \end{align} 
+
+    Agora podemos calcular o volume da esfera:
+    \begin{align}
+        V_e &= \frac{4}{3}\pi r^3 \\[1ex]
+        V_e &= \frac{4}{3}\cdot\left(\frac{d}{\sqrt{2}}\right)^3\pi
+        = \frac{2d^3\pi}{3\sqrt{2}}
+    \end{align}
+    E o volume do cilindro:
+    \begin{align}
+        V_c &= \pi \left( \frac{d}{2} \right)^2 \cdot d\\[1ex]
+        V_c &= \frac{d^3\pi}{4}
+    \end{align}
+    Portanto a razão entre o volume da esfera e do cilindro é:
+    \begin{align}
+        \frac{V_e}{V_c} &= \frac{2d^3\pi}{3\sqrt{2}}\cdot \frac{4}{d^3\pi}\\[1ex]
+        \frac{V_e}{V_c} &= \frac{2\cancel{d^3\pi}}{3\sqrt{2}}\cdot \frac{4}{\cancel{d^3\pi}}\\[1ex]
+        \frac{V_e}{V_c} &= \frac{8}{3\sqrt{2}}
+    \end{align}
+    Racionalizando:
+    \begin{align}
+        \frac{V_e}{V_c} &= \frac{8}{3\sqrt{2}} \cdot\frac{\sqrt{2}}{\sqrt{2}}\\
+        \frac{V_e}{V_c} &= \frac{8\sqrt{2}}{3\cdot2} = \frac{4\sqrt{2}}{3}
+    \end{align}
+    
     % \newpage
     % \subsection*{Apenas para referência}
     % \begin{figure}[H]

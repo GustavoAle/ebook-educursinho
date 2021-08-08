@@ -1,0 +1,20 @@
+\frametitle{\subsecname}
+    Duas retas $p$ e $q$ são consideradas \textbf{paralelas entre si}, se qualquer reta $r$ perpendicular a reta $p$ também for
+    perpendicular a reta $q$. Outra forma de descrever retas paralelas é através do \textbf{Quinto Postulado de Euclides}
+    que diz: Supondo que duas retas $p$ e $q$ são cortadas por uma terceira reta $r$. Se a soma dos ângulos formados um
+    mesmo lado da reta $r$ resultar em 180 graus, então $m$ e $n$ são retas paralelas entre si.
+
+    \begin{figure}[H]
+        \centering
+        %\resizebox{\columnwidth}{!}{%
+        \begin{tikzpicture}
+            \coordinate (A) at (0,0);
+            \coordinate (B) at (5,1);
+            \coordinate (C) at (0,2);
+            \coordinate (D) at (5,3);
+            \draw (A)--node[below] {$p$}(B) ;
+            \draw (C)--node[above] {$q$}(D) ;
+        \end{tikzpicture}
+        %}
+        \caption{Retas paralelas $p$ e $q$}
+    \end{figure}
