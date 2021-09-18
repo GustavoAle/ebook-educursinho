@@ -28,6 +28,8 @@
 \usepackage{array}
 \newtheorem{theorem}{Teorema}
 
+\usepackage{pdfpages}
+
 \usepackage{xcolor}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{makeidx}
@@ -41,7 +43,7 @@
 % \usepackage{arev}
 \usepackage{dejavu}
 \usepackage[T1]{fontenc}
-\hyphenpenalty 10000
+% \hyphenpenalty 10000
 %\exhyphenpenalty 10000
 \renewcommand*\familydefault{\sfdefault}
 
@@ -166,8 +168,8 @@
 \titlespacing{\section}{0mm}{0mm}{8.5mm}
 
 \setlength{\columnsep}{12.5mm}
-% \setlength{\parindent}{12.5mm}
-\setlength{\parindent}{0mm}
+\setlength{\parindent}{12.5mm}
+% \setlength{\parindent}{0mm}
 %\setlength{\parskip}{1mm}
 \renewcommand{\baselinestretch}{1.15}
 
@@ -190,12 +192,20 @@
 \newcounter{numexercicio}
 \newcommand\execnum{\stepcounter{numexercicio}\thenumexercicio. }
 
+%------------------------------ itemize e enumerate ----------------------------    
+
+% \renewcommand{enumerate}{\[wide, labelwidth=!, labelindent=0pt]
 
 %------------------------------ Inicio documento -------------------------------    
 \begin{document}
     
     \renewcommand{\sectionclass}{Matemática}
 
+    \includepdf[pages=-]{assets/capa.pdf}
+
+    \setcounter{page}{1}
+    \renewcommand{\sectionauthor}{}
+    \include{prefacio}
     \include{sumario}
     \include{rafael}
     \include{gustavo}

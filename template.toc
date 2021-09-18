@@ -1,17 +1,17 @@
 \babel@toc {portuguese}{}
 \babel@toc {portuguese}{}
-\contentsline {section}{\numberline {1}Plano Cartesiano}{5}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Constuição do plano cartesiano}{5}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Quadrantes do plano cartesiano}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Distância entre dois pontos e desiguladade triangular}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Exemplo}{7}{subsection.1.4}%
+\contentsline {section}{\numberline {1}Plano Cartesiano}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Constuição do plano cartesiano}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Quadrantes do plano cartesiano}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Distância entre dois pontos e desiguladade triangular}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Exemplo}{8}{subsection.1.4}%
 \contentsline {section}{\numberline {2} Gráficos e Funções}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Funções}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Formas de representação de uma função}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Domínio, Contradomínio e Imagem de uma função}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Gráfico}{11}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Função definida por partes}{11}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Simetria de funções}{11}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}Simetria de funções}{12}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Transformações de funções}{12}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Expansão e compressão das funções}{13}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Cominação de funções}{14}{subsection.2.9}%
@@ -20,86 +20,86 @@
 \contentsline {section}{\numberline {3} Função Linear}{15}{section.3}%
 \contentsline {section}{\numberline {4}Função Quadrática}{17}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Método de Báskara}{17}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Funções Polinomiais}{20}{section.5}%
+\contentsline {section}{\numberline {5}Funções Polinomiais}{19}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Soma, Subtração e multiplicação}{21}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Divisão de polinômios}{21}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Exemplos}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Exemplos}{21}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Sistemas de equações do primeiro grau}{23}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Sistema de equações com duas equações}{24}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Método de adição}{24}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Método da substituição}{25}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Funções exponenciais}{25}{section.7}%
-\contentsline {section}{\numberline {8}Funções logarítmicas}{26}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Exemplos com funções exponenciais e logarítmicas}{27}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Trigonometria}{29}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Relações trigonométricas no triângulo retângulo}{29}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Definição das relações trigonométricas}{30}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Lei dos senos e cossenos}{30}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Funções Trigonométricas}{31}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Tabela de ângulos notáveis}{33}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Funções trigonométricas inversas}{33}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Exemplos:}{33}{subsection.9.7}%
-\contentsline {section}{\numberline {10}Geometria}{36}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Definições gerais}{36}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Grandezas e unidades de medida}{36}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Distância e comprimento}{36}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}Área}{37}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}Volume}{37}{subsubsection.10.2.3}%
-\contentsline {subsubsection}{\numberline {10.2.4}Ângulo}{38}{subsubsection.10.2.4}%
-\contentsline {subsection}{\numberline {10.3}Fíguras geométricas e suas componentes}{38}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Ponto}{38}{subsubsection.10.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.2}Reta}{39}{subsubsection.10.3.2}%
-\contentsline {subsubsection}{\numberline {10.3.3}Plano e superfície}{40}{subsubsection.10.3.3}%
-\contentsline {subsubsection}{\numberline {10.3.4}Sólidos}{40}{subsubsection.10.3.4}%
-\contentsline {section}{\numberline {11}Área e volume}{41}{section.11}%
-\contentsline {section}{\numberline {12}Funções trigonométricas}{42}{section.12}%
-\contentsline {subsection}{\numberline {12.1}o círculo trigonométrico}{42}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Teorema de Pitágoras}{45}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Exercícios}{45}{subsection.12.3}%
-\contentsline {section}{\numberline {13}Teoria de Conjuntos}{50}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Conjuntos Numéricos}{50}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Conjunto dos Números Naturais - $\mathbb {N}$}{50}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Números Cardinais e Ordinais}{51}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}Conjunto dos Números Inteiros - $\mathbb {Z}$}{52}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}Conjunto dos Números Racionais - $\mathbb {Q}$}{53}{subsection.13.5}%
-\contentsline {subsection}{\numberline {13.6}Conjunto dos Números Irracionais - $\mathbb {I}$}{55}{subsection.13.6}%
-\contentsline {subsection}{\numberline {13.7}Conjunto dos Números Reais - $\mathbb {R}$}{55}{subsection.13.7}%
-\contentsline {subsection}{\numberline {13.8}Conjunto dos Números Complexos - $\mathbb {C}$}{56}{subsection.13.8}%
-\contentsline {subsection}{\numberline {13.9}Exercícios de Números Complexos}{58}{subsection.13.9}%
-\contentsline {section}{\numberline {14}Operações de Conjuntos}{58}{section.14}%
-\contentsline {subsection}{\numberline {14.1}União entre Conjuntos}{59}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Interseção entre Conjuntos}{59}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}Diferença entre Conjuntos}{60}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Conjunto Complementar}{60}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5}Símbolos usados com conjuntos}{61}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6}Exercícios sobre Conjuntos}{61}{subsection.14.6}%
-\contentsline {section}{\numberline {15}Porcentagem e Juros Simples}{63}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Regra de Três Simples}{63}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Exercícios de Regra de Três Simples}{64}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3}Juros Simples}{66}{subsection.15.3}%
-\contentsline {subsection}{\numberline {15.4}Exercícios Porcentagem e Juros Simples}{68}{subsection.15.4}%
-\contentsline {section}{\numberline {16}Princípio de Contagem}{70}{section.16}%
-\contentsline {subsection}{\numberline {16.1}Exercícios Princípio de Contagem}{72}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Fatorial}{74}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}Equações fatoriais}{74}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}Operações com fatorial}{74}{subsection.16.4}%
-\contentsline {subsection}{\numberline {16.5}Exercícios Sobre Fatorial}{76}{subsection.16.5}%
-\contentsline {subsection}{\numberline {16.6}Análise Combinatória}{76}{subsection.16.6}%
-\contentsline {subsection}{\numberline {16.7}Arranjo Simples}{77}{subsection.16.7}%
-\contentsline {subsection}{\numberline {16.8}Exercícios de Arranjo Simples}{77}{subsection.16.8}%
-\contentsline {subsection}{\numberline {16.9}Permutação Simples}{78}{subsection.16.9}%
-\contentsline {subsection}{\numberline {16.10}exercícios de Permutação Simples}{78}{subsection.16.10}%
-\contentsline {section}{\numberline {17}Razão e Proporção}{78}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Exercícios de Razão e Proporção}{80}{subsection.17.1}%
-\contentsline {section}{\numberline {18}Relação Dep. Entre Grandezas}{81}{section.18}%
-\contentsline {subsection}{\numberline {18.1}Regra de Três Composta}{83}{subsection.18.1}%
-\contentsline {subsection}{\numberline {18.2}Exercícios de Grandezas}{84}{subsection.18.2}%
-\contentsline {section}{\numberline {19}P.A. e P.G.}{86}{section.19}%
-\contentsline {subsection}{\numberline {19.1}Progressão Aritmética P.A.}{86}{subsection.19.1}%
-\contentsline {subsection}{\numberline {19.2}Exercícios de P.A.}{89}{subsection.19.2}%
-\contentsline {subsection}{\numberline {19.3}Progressão Geométrica P.G.}{89}{subsection.19.3}%
-\contentsline {subsection}{\numberline {19.4}Exercícios de P.G.}{90}{subsection.19.4}%
-\contentsline {section}{\numberline {20}Probabilidade}{92}{section.20}%
-\contentsline {section}{\numberline {21}Estatística}{93}{section.21}%
-\contentsline {subsection}{\numberline {21.1}Representação e Análise de Dados}{93}{subsection.21.1}%
-\contentsline {subsection}{\numberline {21.2}Conceitos e Fundamentos de Estatística}{93}{subsection.21.2}%
+\contentsline {subsection}{\numberline {6.1}Sistema de equações com duas equações}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Método de adição}{23}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Método da substituição}{24}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Funções exponenciais}{24}{section.7}%
+\contentsline {section}{\numberline {8}Funções logarítmicas}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Exemplos com funções exponenciais e logarítmicas}{26}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Trigonometria}{27}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Relações trigonométricas no triângulo retângulo}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Definição das relações trigonométricas}{28}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Lei dos senos e cossenos}{29}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Funções Trigonométricas}{29}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Tabela de ângulos notáveis}{31}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Funções trigonométricas inversas}{31}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Exemplos:}{31}{subsection.9.7}%
+\contentsline {section}{\numberline {10}Geometria}{34}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Definições gerais}{34}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Grandezas e unidades de medida}{34}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Distância e comprimento}{34}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Área}{35}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Volume}{35}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}Ângulo}{36}{subsubsection.10.2.4}%
+\contentsline {subsection}{\numberline {10.3}Fíguras geométricas e suas componentes}{36}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Ponto}{36}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Reta}{37}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Plano e superfície}{37}{subsubsection.10.3.3}%
+\contentsline {subsubsection}{\numberline {10.3.4}Sólidos}{38}{subsubsection.10.3.4}%
+\contentsline {section}{\numberline {11}Área e volume}{39}{section.11}%
+\contentsline {section}{\numberline {12}Funções trigonométricas}{40}{section.12}%
+\contentsline {subsection}{\numberline {12.1}o círculo trigonométrico}{40}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Teorema de Pitágoras}{42}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Exercícios}{43}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Teoria de Conjuntos}{47}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Conjuntos Numéricos}{47}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Conjunto dos Números Naturais - $\mathbb {N}$}{47}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Números Cardinais e Ordinais}{47}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Conjunto dos Números Inteiros - $\mathbb {Z}$}{49}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Conjunto dos Números Racionais - $\mathbb {Q}$}{50}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Conjunto dos Números Irracionais - $\mathbb {I}$}{51}{subsection.13.6}%
+\contentsline {subsection}{\numberline {13.7}Conjunto dos Números Reais - $\mathbb {R}$}{51}{subsection.13.7}%
+\contentsline {subsection}{\numberline {13.8}Conjunto dos Números Complexos - $\mathbb {C}$}{52}{subsection.13.8}%
+\contentsline {subsection}{\numberline {13.9}Exercícios de Números Complexos}{53}{subsection.13.9}%
+\contentsline {section}{\numberline {14}Operações de Conjuntos}{54}{section.14}%
+\contentsline {subsection}{\numberline {14.1}União entre Conjuntos}{54}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Interseção entre Conjuntos}{55}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Diferença entre Conjuntos}{55}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Conjunto Complementar}{56}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Símbolos usados com conjuntos}{56}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}Exercícios sobre Conjuntos}{56}{subsection.14.6}%
+\contentsline {section}{\numberline {15}Porcentagem e Juros Simples}{58}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Regra de Três Simples}{58}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Exercícios de Regra de Três Simples}{59}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Juros Simples}{61}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}Exercícios Porcentagem e Juros Simples}{62}{subsection.15.4}%
+\contentsline {section}{\numberline {16}Princípio de Contagem}{64}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Exercícios Princípio de Contagem}{65}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Fatorial}{67}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Equações fatoriais}{68}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Operações com fatorial}{68}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Exercícios Sobre Fatorial}{69}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Análise Combinatória}{69}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Arranjo Simples}{70}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Exercícios de Arranjo Simples}{70}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Permutação Simples}{71}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}exercícios de Permutação Simples}{71}{subsection.16.10}%
+\contentsline {section}{\numberline {17}Razão e Proporção}{71}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Exercícios de Razão e Proporção}{72}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Relação Dep. Entre Grandezas}{74}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Regra de Três Composta}{75}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Exercícios de Grandezas}{76}{subsection.18.2}%
+\contentsline {section}{\numberline {19}P.A. e P.G.}{78}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Progressão Aritmética P.A.}{78}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Exercícios de P.A.}{80}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Progressão Geométrica P.G.}{81}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Exercícios de P.G.}{82}{subsection.19.4}%
+\contentsline {section}{\numberline {20}Probabilidade}{83}{section.20}%
+\contentsline {section}{\numberline {21}Estatística}{84}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Representação e Análise de Dados}{84}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Conceitos e Fundamentos de Estatística}{84}{subsection.21.2}%
