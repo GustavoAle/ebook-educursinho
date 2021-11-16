@@ -1,5 +1,0 @@
-\babel@toc {portuguese}{}
-\babel@toc {portuguese}{}
-\beamer@sectionintoc {1}{Triângulos retângulos}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Teorema de Pitágoras}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Aplicações}{6}{0}{1}

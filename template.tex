@@ -58,7 +58,7 @@
 }
 \makeatother
 
-\AtBeginDocument{\globalcolor{mediumgray}}
+% \AtBeginDocument{\globalcolor{mediumgray}}
 
 %------------------------------- Formatação ------------------------------------
 
@@ -90,6 +90,13 @@
 %     voffset=-1in,
 %     hoffset=0in
 % }
+
+\hypersetup{
+    colorlinks,
+    linkcolor={mediumgray},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 
 \geometry{
     a4paper,
@@ -134,6 +141,7 @@
 
 \fancyhead[R]{  %------ Campo da direita ------
     %\renewcommand{\arraystretch}{1}
+    \color{mediumgray}
     \fontsize{10pt}{12}\selectfont
     \begin{tabular}{@{}r@{}}
         \color{OrangeEd}\MakeUppercase{\textbf{\sectionclass}} \\
@@ -161,8 +169,11 @@
 \titleformat*{\section}{\color{OrangeEd}\fontsize{18pt}{18}\centering\bfseries\sffamily\uppercase}
 \titleformat*{\subsection}{\color{black}\raggedright\large\bfseries\sffamily\uppercase}
 \titleformat*{\subsubsection}{\color{black}\bfseries\uppercase}
-% \titlespacing{\subsection}{0mm}{0mm}{0mm}
-% \titlespacing{\section}{0mm}{0mm}{0mm}
+
+% \titlespacing{\subsection}{0mm}{5mm}{8mm}
+% \titlespacing{\section}{0mm}{0mm}{8.5mm}
+
+% \titlespacing
 
 \titlespacing{\subsection}{0mm}{5mm}{8mm}
 \titlespacing{\section}{0mm}{0mm}{8.5mm}
@@ -170,9 +181,10 @@
 \setlength{\columnsep}{12.5mm}
 \setlength{\parindent}{12.5mm}
 % \setlength{\parindent}{0mm}
-%\setlength{\parskip}{1mm}
+% \setlength{\parskip}{1mm}
 \renewcommand{\baselinestretch}{1.15}
 
+% \def\thesubsectiondis{\unskip\arabic{subsection})}
 
 %------------------------------ Estilo pgfplot ---------------------------------
 
@@ -203,12 +215,15 @@
 
     \includepdf[pages=-]{assets/capa.pdf}
 
-    \setcounter{page}{1}
+    % \setcounter{page}{1}
     \renewcommand{\sectionauthor}{}
     \include{prefacio}
-    \include{sumario}
+    % \include{sumario}
+    \pagestyle{fancy}
+    \includepdf{assets/section_graficos.pdf}
     \include{rafael}
-    \include{gustavo}
-    \include{wesley}
+    % \includepdf{assets/section_geometria.pdf}
+    % \include{gustavo}
+    % \include{wesley}
     
 \end{document}
