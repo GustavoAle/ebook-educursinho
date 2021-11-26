@@ -26,6 +26,8 @@
 \usepackage{cancel}
 \usepackage{lipsum}
 \usepackage{array}
+\usepackage{caption}
+
 \newtheorem{theorem}{Teorema}
 
 \usepackage{pdfpages}
@@ -175,15 +177,21 @@
 
 % \titlespacing
 
-\titlespacing{\subsection}{0mm}{5mm}{8mm}
-\titlespacing{\section}{0mm}{0mm}{8.5mm}
+\titlespacing{\subsection}{0mm}{0mm}{0mm}
+\titlespacing{\section}{0mm}{0mm}{0mm}
+
+\setlength{\abovedisplayskip}{3mm}
+\setlength{\belowdisplayskip}{3mm}
+\setlength{\abovedisplayshortskip}{3mm}
+\setlength{\belowdisplayshortskip}{3mm}
 
 \setlength{\columnsep}{12.5mm}
 \setlength{\parindent}{12.5mm}
 % \setlength{\parindent}{0mm}
-% \setlength{\parskip}{1mm}
+\setlength{\parskip}{5mm}
 \renewcommand{\baselinestretch}{1.15}
 
+% \raggedbottom
 % \def\thesubsectiondis{\unskip\arabic{subsection})}
 
 %------------------------------ Estilo pgfplot ---------------------------------
@@ -202,7 +210,7 @@
 %-------------------------- contador para exercícios ---------------------------    
 
 \newcounter{numexercicio}
-\newcommand\execnum{\stepcounter{numexercicio}\thenumexercicio. }
+\newcommand\execnum{\noindent\stepcounter{numexercicio}\thenumexercicio. }
 
 %------------------------------ itemize e enumerate ----------------------------    
 
@@ -220,10 +228,16 @@
     \include{prefacio}
     % \include{sumario}
     \pagestyle{fancy}
+    
+    % Rafael
     \includepdf{assets/section_graficos.pdf}
     \include{rafael}
-    % \includepdf{assets/section_geometria.pdf}
-    % \include{gustavo}
-    % \include{wesley}
+
+    % Gustavo
+    \includepdf{assets/section_geometria.pdf}
+    \include{gustavo}
+
+    % Wesley
+    \include{wesley}
     
 \end{document}
