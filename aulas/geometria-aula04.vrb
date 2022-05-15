@@ -1,9 +1,0 @@
-\frametitle{\subsecname}
-
-    \begin{block}{Distância entre pontos}
-    Portanto a distância entre dois pontos quaisquer em um plano cartesiano
-    pode ser obtida através da fórmula:
-    \begin{align*}
-        a &= \sqrt{|x_2-x_1|^2 + |y_2-y_1|^2}
-    \end{align*}
-    \end{block}

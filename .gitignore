@@ -1,6 +1,7 @@
 *.aux
 *.log
 *.fls
+*.vrb
 *.synctex.gz
 *.fdb_latexmk
 aulas/geometria-aula05.nav
