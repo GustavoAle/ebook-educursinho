@@ -1,3 +1,3 @@
-# Ebook Educursinho
-Repositório contendo o template e a edição do ebook em LateX
+# Ebook Educursinho - Matemática
+Repositório contendo o template e a edição da apostila de matemática em LateX
 
